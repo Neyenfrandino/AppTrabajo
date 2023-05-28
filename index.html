@@ -1,25 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>Hola neyen</title>
-    <script src="app.js"></script>
+    <title>Cuso de JS</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+    
     
 </head>
 <body>
-    <h1>Curso de Js.DOM</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Curabitur accumsan, risus vitae hendrerit viverra, neque sapien congue nisl, eget porta urna mauris a ipsum.
-          Praesent vestibulum leo quis risus bibendum rutrum. Pellentesque luctus, mauris elementum faucibus venenatis,
-           tellus elit ultrices felis, ac consectetur lectus tellus nec erat. Fusce viverra eleifend arcu. 
-           Curabitur efficitur lobortis mi quis aliquam. Aliquam pulvinar, leo ac placerat aliquet, 
-           ligula dui tristique eros, vitae placerat urna sem non tellus. Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Etiam nisi odio, aliquet vitae justo vel, maximus accumsan lacus. Praesent erat enim,
-             mollis sit amet dui nec, volutpat venenatis mauris. Vivamus lobortis massa in blandit bibendum. Cras in mollis tellus.
-             
-             Curabitur facilisis pretium lacinia. Praesent sapien purus, maximus vitae ipsum sodales, vestibulum lobortis velit. 
-             Cras dapibus egestas nunc, non vehicula orci laoreet sed.
-         Aliquam maximus ut metus vel vehicula. Nullam vitae neque fringilla, porttitor felis non, varius mi. </p>
+    
+    <form action="" class="formulario" id="formulario">
+        <!--Grupo: usuario-->
+        <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Usuario</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="usuario" id="usuario"  placeholder="Neyen1995">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+        </div>
 
+         <!--Grupo: Nombre-->
+         <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre"  placeholder="Neyen Frandino">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
+        </div>
+
+         <!--Grupo: contraseña-->
+        <div class="formulario__grupo" id="grupo__pasword">
+            <label for="pasword" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="pasword" id="pasword">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos</p>
+        </div>
+
+         <!--Grupo: contraseña2-->
+         <div class="formulario__grupo" id="grupo__pasword2">
+            <label for="pasword2" class="formulario__label">Repetir contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="pasword2" id="pasword2">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">Ambas contraseñas deben ser iguales</p>
+        </div>
+
+         <!--Grupo: Correo electronico-->
+         <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo Electronico</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">El correo solo puede cotener, letras, numeros, puntos y guion bajo</p>
+        </div>
+        
+        <!--Grupo:Telefono-->
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Telefono </label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3534794179">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>   
+            </div>
+            <p class="formulario__input-error">El telefono solo puede contener numeros, y solo 14 digitos</p>
+        </div> 
+
+        <!--Grupo para terminos y condiciones-->
+        
+        <div class="formulrio__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los terminos y condiciones
+            </label>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fa-regular fa-triangle-exclamation"></i><b>Error: </b>por favor rellene el formulario coerrectamente</p>
+        </div>
+
+        <div class="formulario__grupo   formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envio exitosamente!</p>
+        </div>        
+
+
+        
+
+    </form>
+
+<script src="app.js"></script>
+<script src="https://fontawesome.com/search?q=time&o=r" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,2 +1,2 @@
-let saludo = "Hola mundo hola que tal ";
-console.log(saludo);
+const abuelo = document.querySelector('ul.listado > li.list');
+console.log(abuelo.parentElement.parentElement);
