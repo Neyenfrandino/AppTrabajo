@@ -143,15 +143,16 @@ body{
 
   }
 
-      .formulario__grupo-terminos,
+    .formulario__grupo-terminos,
     .formulario__mensaje, 
     .formulario__grupo-btn-enviar {
       grid-column: span 1;
 }    
-}
-
 .formulario__btn{
   width: 100%;
 }
  
+}
+
+
 
